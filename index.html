@@ -1,0 +1,74 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <!-- Your resume form HTML here -->
+    </div>
+    
+    <script src="dist/app.js"></script>
+</body>
+</html>
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="ok">
+    <div class="form-container">
+        <form id="resumeForm">
+            <h1 class="ko">Create Your Resume</h1>
+            <section>
+            <h2 class="ko">Personal Information</h2>
+            <input class="cp" type="text" id="firstName" placeholder="First Name" required>
+            <br></br>
+            <input  class="cp" type="text" id="lastName" placeholder="Last Name" required>
+            <input  class="cp" type="email" id="email" placeholder="Email" required>
+            <input class="cp" type="tel" id="phone" placeholder="Phone" required>
+        </section>
+            <section>
+            <h2 class="ko">Education</h2>
+            <input class="cp" type="text" id="degree" placeholder="Degree" required>
+            <input class="cp" type="text" id="university" placeholder="University" required>
+            <input class="cp" type="text" id="year" placeholder="Graduation Year" required>
+        </section>
+            <section>
+            <h2 class="ko">Work Experience</h2>
+            <input class="cp" type="text" id="jobTitle" placeholder="Job Title" required>
+            <input class="cp" type="text" id="company" placeholder="Company" required>
+            <input class="cp" type="text" id="duration" placeholder="Duration" required>
+            <textarea id="description" placeholder="Job Description"></textarea>
+        </section>
+            <br></br>
+            <button class="cpp" type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="dist/app.js"></script>
+</body>
+</html>
+<style>
+    .ok{
+        background-color: rgb(0, 0, 0);
+    }
+    .ko{
+        color: #707070;;
+    }
+    .cp{
+        margin-right: 20px;
+    }
+    .cpp{
+        background-color: blue;
+        padding: 10px;
+    }
+</style>
